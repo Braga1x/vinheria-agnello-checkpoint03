@@ -25,17 +25,17 @@ vinicola.forEach(vinho => {
 });
 
 
-console.log("\n--- 2. VINHOS COM ESTOQUE BAIXO (MENOR QUE 5) (filter) ---");
+
 
 const estoqueBaixo = vinicola.filter(vinho => vinho.estoque < 5);
 console.log(estoqueBaixo);
 
 
-console.log("\n--- 3. ESTOQUE TOTAL DA VINÍCOLA (reduce) ---");
+
 const estoqueTotal = vinicola.reduce((acumulador, vinho) => acumulador + vinho.estoque, 0);
-console.log(`Quantidade total de garrafas no estoque: ${estoqueTotal}`);
+console.log(`Quantidade total de vinhos no estoque: ${estoqueTotal}`);
 
 
-console.log("\n--- 4. NOMES DOS VINHOS EM CAIXA ALTA (map) ---");
+
 const nomesMaiusculos = vinicola.map(vinho => vinho.nome.toUpperCase());
 console.log(nomesMaiusculos);
